@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Exercice-3-1</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+
+  <body>
+    <div id="app"></div>
+
+    <script type="text/babel">
+      function App() {
+        const [nom, setNom] = React.useState();
+        const [prenom, setPrenom] = React.useState();
+        const [information, setInformation] = React.useState();
+
+        function sumbit() {
+          setInformation(`Nom : ${nom} -q Prenom : ${prenom}`);
+        }
+
+        return (
+          <div>
+            <label for="name">
+              Name :
+              <input
+                type="text"
+                onChange={(e) => setNom(e.target.value.toUpperCase())}
+              />
+            </label>
+            <br/>
+             <label for="prenom">
+              Prenom :
+              <input
+                type="text"
+                onChange={(e) => setPrenom(e.target.value.toUpperCase())}
+              />
+            </label>
+            <br/>
+            <button onClick={sumbit}>envoyer</button>
+            <p>{information}</p>
+          </div>
+        );
+      }
+
+      ReactDOM.render(<App />, document.getElementById("app"));
+    </script>
+  </body>
+</html>
