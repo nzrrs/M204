@@ -1,0 +1,171 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Navbar.css */
+.navbar {
+  display: flex;
+  background-color: #333;
+  padding: 0.5rem 1rem;
+}
+.nav-link {
+  color: white;
+  text-decoration: none;
+  margin-right: 1rem;
+  padding: 0.5rem;
+  transition: background 0.3s;
+  border-radius: 4px;
+}
+
+.nav-link:hover {
+  background-color: #555;
+}
+
+/* Home.css */
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+.home h1 {
+  margin-bottom: 0.5rem;
+}
+
+.home p {
+  font-size: 1.1rem;
+  color: #666;
+}
+
+/* Posts.css */
+.posts-container {
+  padding: 2rem;
+  font-family: Arial, sans-serif;
+}
+
+.post-card {
+  border: 1px solid #ddd;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 6px;
+  background-color: #fafafa;
+  transition: transform 0.3s;
+}
+
+.post-card:hover {
+  transform: scale(1.01);
+}
+
+.post-card h2 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.post-card p {
+  color: #555;
+  font-size: 1rem;
+}
+
+/* Users.css */
+.users-container {
+  padding: 2rem;
+  font-family: Arial, sans-serif;
+}
+
+.users-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.users-table th,
+.users-table td {
+  border: 1px solid #ddd;
+  padding: 0.75rem 1rem;
+  text-align: left;
+}
+
+.users-table th {
+  background-color: #f4f4f4;
+}
+
+.users-table tr:nth-child(even) {
+  background-color: #fafafa;
+}
+
+.details-btn {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 0.3rem 0.6rem;
+  margin-right: 0.5rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.details-btn:hover {
+  background-color: #2980b9;
+}
+
+.delete-btn {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 0.3rem 0.6rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+
+/* Users.css (add this below existing table styles) */
+
+.details-container {
+  padding: 2rem;
+  font-family: Arial, sans-serif;
+  max-width: 500px;
+  background-color: #fafafa;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  text-align: left;
+  margin: 50px auto;
+}
+
+.details-container h1 {
+  text-align: left;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.details-container p {
+  font-size: 1rem;
+  color: #555;
+  margin: 0.5rem 0;
+}
+
+.details-container strong {
+  color: #333;
+}
+
+.details-container button {
+  display: block;
+  margin: 1.5rem auto 0;
+  padding: 0.5rem 1rem;
+  background-color: #e9dede;
+  border-radius: 5px;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.3s;
+}
