@@ -3,7 +3,7 @@ import { Link } from "react-router";
 const Users = ({ users, deleteUser }) => {
   return (
     <div className="users-container">
-      <h1>Users</h1>
+      <h1 style={{marginBottom : "1.5rem"}}>Users</h1>
       <table className="users-table">
         <thead>
           <tr>
