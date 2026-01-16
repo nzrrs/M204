@@ -1,12 +1,31 @@
-import { Link } from "react-router"
-const Navbar = () => {
+import { NavLink } from "react-router";
+
+function Navbar() {
   return (
     <nav className="navbar">
-        <Link to="/" className="nav-link">Home</Link>
-        <Link to="/posts" className="nav-link">Posts</Link>
-        <Link to="/users" className="nav-link">Users</Link>
+      <NavLink
+        to="/"
+        className={({ isActive }) => (isActive ? "nav-link active" : "nav-link")}
+      >
+        Home
+      </NavLink>
+
+      <NavLink
+        to="/users"
+        className={({ isActive }) => (isActive ? "nav-link active" : "nav-link")}
+      >
+        Users
+      </NavLink>
+
+      <NavLink
+        to="/posts"
+        className={({ isActive }) => (isActive ? "nav-link active" : "nav-link")}
+      >
+        Posts
+      </NavLink>
     </nav>
-  )
+  );
 }
+
 
 export default Navbar
